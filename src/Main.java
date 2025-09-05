@@ -16,11 +16,21 @@ public class Main {
         double result = 0.0;
 
         switch (operation) {
-            case '+': result = a+b; break;
-            case '-': result = a-b; break;
-            case '*': result = a*b; break;
-            case '/': result = b != 0 ? a/b : Double.NaN; break;
-            default: System.out.println("Ungültige Operation!"); return;
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+            case '/':
+                result = b != 0 ? a / b : Double.NaN;
+                break;
+            default:
+                System.out.println("Ungültige Operation!");
+                return;
         }
         System.out.println("Ergebnis: " + result);
     }
